@@ -1,0 +1,190 @@
+languageCode = "en-us"
+title = "James Royal Resume"
+baseurl = "https://almightyzero.com/aboutme"
+
+# Page settings
+
+theme = "hugo-orbit-theme"
+googleAnalytics = "UA-XXXXXXX-Y"
+
+# Do not build files for websites. Need them? Set to false
+disableRSS = true
+disableSitemap = true
+disable404 = true
+
+[params]
+
+# Theme styles
+
+    # The original template comes with 6 colour schemes. You may choose styles below.
+    # "styles.css", "styles-2.css", "styles-3.css", "styles-4.css", "styles-5.css", "styles-6.css"
+    # are available. Also the source LESS files are included so
+    # it’s quick and easy to change the styling and colour scheme.
+
+    styles = "styles-3.css"
+
+# Sidebar sections
+
+    # Profile section
+    [params.profile]
+        name = "James Royal"
+        tagline = "Software Engineer"
+        avatar = "profile.png"
+
+    # Contact section
+    [params.contact]
+        enable = true
+
+        [[params.contact.list]]
+        class = "email"
+        icon = "fa-envelope"
+        url = "mailto: jhr.atx@email.com"
+        title = "jhr.atx@gmail.com"
+
+        [[params.contact.list]]
+        class = "website"
+        icon = "fa-globe"
+        url = "//almightyzero.com"
+        title = "almightyzero.com"
+
+        [[params.contact.list]]
+        class = "linkedin"
+        icon = "fa-linkedin"
+        url = "//linkedin.com/in/james-royal-bb441b5b"
+        title = "linkedin james"
+
+        [[params.contact.list]]
+        class = "github"
+        icon = "fa-github"
+        url = "//github.com/jroyal"
+        title = "github.com/jroyal"
+
+    # Education section
+    [params.education]
+        enable = true
+        title = "Education"
+
+        [[params.education.list]]
+        degree = "BSc in Computer Science"
+        college = "University of Texas at Austin"
+        dates = "2009 - 2013"
+
+    # Languages section
+    [params.languages]
+        enable = true
+        title = "Languages"
+
+        [[params.languages.list]]
+        language = "Python"
+        level = "Expert"
+
+        [[params.languages.list]]
+        language = "Golang"
+        level = "Proficient"
+
+        [[params.languages.list]]
+        language = "Javascript"
+        level = "Familiar"
+
+    # Interests section
+    [params.interests]
+        enable = true
+        title = "Interests"
+
+        [[params.interests.list]]
+        interest = "Video games"
+
+        [[params.interests.list]]
+        interest = "Development side projects"
+
+        [[params.interests.list]]
+        interest = "Eating at restaurants"
+
+# Main body sections
+
+    # You may use markdown in summary, details and intro fields. But don't overdose, it's resume!:)
+
+    # Summary section
+    [params.summary]
+        enable = true
+        icon = "fa-user"
+        title = "Welcome!"
+        summary = "If you have made it to this little corner of the internet you either got lost, or you are looking at one of my little side projects. If you are the former, sorry, and I hope that you find your way to where ever it is that you were trying to go. If it's the latter, then yay! You got to the right place!\n\nHopefully the following information can give a little more insight into who I am and what I have been up to professionally the last few years."
+
+    # Experiences section
+    [params.experiences]
+        enable = true
+        icon = "fa-briefcase"
+        title = "Experiences"
+
+        [[params.jobs.list]]
+        position = "Software Engineer"
+        dates = "2017 - Present"
+        company = "Cloudflare, Austin"
+        details = "* Develop and maintain backend services for Cloudflares AMP implementation"
+
+        [[params.jobs.list]]
+        position = "Staff Software Engineer"
+        dates = "2013 - 2017"
+        company = "IBM, Austin"
+        details = "* Developed, tested, deployed, and maintained over six microservices powering IBM Autoscaling for Docker Containers\n* Authored and maintained internal python framework powering microservices across IBM Cloud services. Framework provides logging, metrics, swagger documentation, service discovery, and more  \n* Developed a framework for building new grafana dashboards to allow our team to reliably and quickly push updates when new metrics are needed for our service. Allowed us to maintain hundreds of graphs across multiple regions in an easy to use manner \n* Built framework to compose, configure, and reliably deploy jenkins job configurations. Enabled us to store jenkins configurations in git and redeploy if a job was accidently deleted or misconfigured"
+
+        [[params.jobs.list]]
+        position = "Refining Systems Intern"
+        dates = "Summer 2012"
+        company = "Valero Energy Corp, San Antonio"
+        details = "* Converted existing web based UI to a mobile application for a current system dashboard using Apache Cordova"
+
+    # Projects section
+    [params.projects]
+        enable = true
+        icon = "fa-archive"
+        title = "Projects"
+        intro = ""
+
+        [[params.projects.list]]
+        title = "Drafthouse Seat Finder"
+        url = "https://github.com/jroyal/drafthouse-seat-finder"
+        technologies = "Golang, Bootstrap"
+        tagline = "Solved a minor annoyance for me by allowing me to see all seat charts for a given movie on a given day for the alamo drafthouse."
+
+        [[params.projects.list]]
+        title = "Oregon Trail Tombstone Generator as a Service"
+        url = "https://github.com/jroyal/OTTGaaS"
+        technologies = "Python, Flask, Docker"
+        tagline = "A service to generate oregon trail tombstones with a specific inscription (because why not)."
+
+        [[params.projects.list]]
+        title = "SlackPoll"
+        url = "https://github.com/jroyal/SlackPoll"
+        technologies = "Python, Flask, MongoDB, Docker"
+        tagline = "This project adds a basic polling integration to slack channels."
+
+        [[params.projects.list]]
+        title = "Wordbrain Solver"
+        url = "https://github.com/jroyal/wordbrain-solver"
+        technologies = "Golang"
+        tagline = "My attempt at creating a solver for the game wordbrain."
+
+
+    # Skills section
+    [params.skills]
+        enable = false
+        icon = "fa-rocket"
+        title = "Skills & Proficiency"
+
+        [[params.skills.list]]
+        skill = "Python & Django"
+        level = "98%"
+
+    # Footer section
+
+    # The original template is released under the Creative Commons Attribution 3.0 License.
+    # Please keep the original attribution link when using for your own project.
+    # If you'd like to use the template without the attribution,
+    # you can check out other license options via template author's website: themes.3rdwavemedia.com
+    # 
+    # As for Hugo port you may rewrite the "Ported for..." line with setting your name below.
+
+    [params.footer]
+        copyright = "James Royal"
